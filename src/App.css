@@ -1,50 +1,32 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  background: #0d1f14;
   font-family: Arial, sans-serif;
-  background: #162317;
-  color: white;
 }
 
-.game {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+.app-shell {
+  width: 100%;
+  height: 100%;
 }
 
-.topbar {
-  display: flex;
-  justify-content: space-around;
-  padding: 12px;
-  background: #223b24;
-  border-bottom: 2px solid #3d6b41;
+.phaser-root {
+  width: 100%;
+  height: 100%;
 }
 
-.park {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background:
-    linear-gradient(
-      rgba(0,0,0,.2),
-      rgba(0,0,0,.2)
-    ),
-    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
-  background-size: cover;
-}
-
-.sidebar {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  padding: 12px;
-  background: #223b24;
-}
-
-.sidebar button {
-  padding: 10px 16px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+canvas {
+  display: block;
 }
